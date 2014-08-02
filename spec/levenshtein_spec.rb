@@ -1,6 +1,6 @@
 require 'levenshtein'
 
-describe '#levenshtein' do
+RSpec.describe '#levenshtein' do
   let(:initial_string) { 'string' }
   it 'should find the distance of 0' do
     expect(initial_string.levenshtein 'string').to eq 0
